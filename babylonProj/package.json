@@ -16,7 +16,9 @@
     "shapes01build": "tsc && vite build shapes01",
     "shapes01preview": "vite preview shapes01 --host",
     "AWelement1build": "tsc && vite build AWelement1",
-    "AWelement1preview": "vite preview AWelement1 --host"
+    "AWelement1preview": "vite preview AWelement1 --host",
+    "villagebuild": "tsc && vite build village",
+    "villagepreview": "vite preview village --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
