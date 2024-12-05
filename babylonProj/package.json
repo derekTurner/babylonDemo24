@@ -7,8 +7,10 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
-    "lighting02build": "tsc && vite build lighting02",
-    "lighting02preview": "vite preview lighting02 --host",
+    "lighting02build": "vite build lighting02",
+    "lighting02preview": "preview lighting02 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "preview village --host",
     "rotationbuild": "tsc && vite build rotation",
     "rotationpreview": "vite preview rotation --host",
     "frames01build": "tsc && vite build frames01",
@@ -17,9 +19,10 @@
     "shapes01preview": "vite preview shapes01 --host",
     "AWelement1build": "tsc && vite build AWelement1",
     "AWelement1preview": "vite preview AWelement1 --host",
-    "villagebuild": "tsc && vite build village",
     "collisionbuild": "vite build collision",
-    "collisionpreview": "vite preview collision --host"
+    "collisionpreview": "vite preview collision --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host"
   },
   "devDependencies": {
     "typescript": "~5.6.2",
