@@ -10,6 +10,10 @@
     "havok": "cp ../node_modules/@babylonjs/havok/lib/esm/HavokPhysics.wasm  ./node_modules/.vite/deps",
     "lighting02build": "tsc && vite build lighting02",
     "lighting02preview": "vite preview lighting02 --host",
+    "lighting02build": "vite build lighting02",
+    "lighting02preview": "preview lighting02 --host",
+    "villagebuild": "vite build village",
+    "villagepreview": "preview village --host",
     "rotationbuild": "tsc && vite build rotation",
     "rotationpreview": "vite preview rotation --host",
     "frames01build": "tsc && vite build frames01",
@@ -30,22 +34,14 @@
     "collision01betterpreview": "vite preview collision01better --host",
     "AWelement1build": "tsc && vite build AWelement1",
     "AWelement1preview": "vite preview AWelement1 --host",
-    "AWelement2build": "tsc && vite build AWelement2",
-    "AWelement2preview": "vite preview AWelement2 --host",
-    "AWelement3build": "tsc && vite build AWelement3",
-    "AWelement3preview": "vite preview AWelement3 --host",
-    "AWelement4build": "tsc && vite build AWelement4",
-    "AWelement4preview": "vite preview AWelement4 --host",
-    "AWelement5build": "tsc && vite build AWelement5",
-    "AWelement5preview": "vite preview AWelement5 --host"
+    "collisionbuild": "vite build collision",
+    "collisionpreview": "vite preview collision --host",
+    "multibuild": "vite build multi",
+    "multipreview": "vite preview multi --host"
   },
   "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
-  },
-  "dependencies": {
-    "@babylonjs/havok": "^1.3.0",
-    "vite-plugin-top-level-await": "^1.3.1",
-    "vite-plugin-wasm": "^3.2.2"
+    "typescript": "~5.6.2",
+    "vite": "^5.4.9",
+    "vite-plugin-chunk-split": "^0.5.0" 
   }
 }
