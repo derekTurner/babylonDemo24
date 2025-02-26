@@ -1,5 +1,5 @@
 {
-  "name": "babylonproj",
+  "name": "testproj",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,6 +7,7 @@
     "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview --host",
+    "havok": "cp ../node_modules/@babylonjs/havok/lib/esm/HavokPhysics.wasm  ./node_modules/.vite/deps",
     "lighting02build": "tsc && vite build lighting02",
     "lighting02preview": "vite preview lighting02 --host",
     "rotationbuild": "tsc && vite build rotation",
@@ -15,14 +16,36 @@
     "frames01preview": "vite preview frames01 --host",
     "shapes01build": "tsc && vite build shapes01",
     "shapes01preview": "vite preview shapes01 --host",
+    "villagebuild": "tsc && vite build village",
+    "villagepreview": "vite preview village --host",
+    "motion01build": "tsc && vite build motion01",
+    "motion01preview": "vite preview motion01 --host",
+    "motion02build": "tsc && vite build motion02",
+    "motion02preview": "vite preview motion02 --host",
+    "motion03build": "tsc && vite build motion03",
+    "motion03preview": "vite preview motion03 --host",
+    "collision03build": "tsc && vite build collision03",
+    "collision03preview": "vite preview collision03 --host",
+    "collision01betterbuild": "tsc && vite build collision01better",
+    "collision01betterpreview": "vite preview collision01better --host",
     "AWelement1build": "tsc && vite build AWelement1",
     "AWelement1preview": "vite preview AWelement1 --host",
-    "villagebuild": "tsc && vite build village",
-    "villagepreview": "vite preview village --host"
+    "AWelement2build": "tsc && vite build AWelement2",
+    "AWelement2preview": "vite preview AWelement2 --host",
+    "AWelement3build": "tsc && vite build AWelement3",
+    "AWelement3preview": "vite preview AWelement3 --host",
+    "AWelement4build": "tsc && vite build AWelement4",
+    "AWelement4preview": "vite preview AWelement4 --host",
+    "AWelement5build": "tsc && vite build AWelement5",
+    "AWelement5preview": "vite preview AWelement5 --host"
   },
   "devDependencies": {
-    "typescript": "~5.6.2",
-    "vite": "^5.4.9",
-    "vite-plugin-chunk-split": "^0.5.0"
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "dependencies": {
+    "@babylonjs/havok": "^1.3.0",
+    "vite-plugin-top-level-await": "^1.3.1",
+    "vite-plugin-wasm": "^3.2.2"
   }
 }
