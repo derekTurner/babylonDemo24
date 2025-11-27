@@ -1,4 +1,3 @@
-
 import setSceneIndex from "./../index";
 
 import {
@@ -14,33 +13,7 @@ import {
  
   //----------------------------------------------------
 
-  function createText(scene: Scene, theText: string, x: string, y: string, s: string, c: string, advtex) {
-    let text = new GUI.TextBlock();
-    text.text = theText;
-    text.color = c;
-    text.fontSize = s;
-    text.fontWeight = "bold"; //can add parameter for this if you wish
-    text.left = x;
-    text.top = y;
-    advtex.addControl(text);
-    return text;
-  }
-
-  function createRectangle(scene: Scene, w: string, h: string, x: string, y: string, cr: number, c: string, t: number, bg: string, advtext) {
-    let rectangle = new GUI.Rectangle();
-    rectangle.width = w;
-    rectangle.height = h;
-    rectangle.left = x;
-    rectangle.top = y;
-    rectangle.cornerRadius = cr;
-    rectangle.color = c;
-    rectangle.thickness = t;
-    rectangle.background = bg;
-    advtext.addControl(rectangle);
-    return rectangle;
-  }
-
-  function createSceneButton(scene: Scene, name: string, note: string, index: number, x: string, y: string, advtex) {
+  function createSceneButton(scene: Scene, name: string, note: string, index: number, x: string, y: string, advtex: GUI.AdvancedDynamicTexture) {
     let button = GUI.Button.CreateSimpleButton(name, note);
         button.left = x;
         button.top = y;
@@ -79,7 +52,7 @@ import {
     camTarget,
     scene,
   );
-  camera.attachControl(true);
+  camera.attachControl(false);
   return camera;
 }
   
@@ -96,9 +69,6 @@ import {
       camera: Camera;
     }
   
-    //let that: SceneData = { scene: new Scene(engine) };
-    
-    //----------------------------------------------------------
     let scene = new Scene(engine);
     let advancedTexture = GUI.AdvancedDynamicTexture.CreateFullscreenUI("myUI", true);
     var button1 = createSceneButton(scene,"but1", "1",1,"-150px", "120px", advancedTexture);
